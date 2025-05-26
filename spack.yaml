@@ -2,9 +2,11 @@ spack:
   # add package specs to the `specs` list
   specs:
   - gcc@14.2.0
-  view: true
+  - gcc@12.4.0
+  - gcc@10.5.0
+  view: false
   concretizer:
-    unify: true
+    unify: when_possible
   modules:
     default:
       enable: [lmod]
